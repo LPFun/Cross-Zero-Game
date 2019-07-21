@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent"
+        >
+    <FrameLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            >
+        <ImageView
+                android:id="@+id/game_back_iv"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        <LinearLayout
+                android:paddingRight="16dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+            <TextView
+                    android:paddingRight="6dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textColor="#0077ff"
+                    android:lineSpacingExtra="20sp"
+                    android:text="Time to move:"
+                    />
+            <TextView
+                    android:id="@+id/game_countdown_tv"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textColor="#0077ff"
+                    android:lineSpacingExtra="20sp"
+                    android:gravity="center_vertical"
+                    android:text="23"
+                    />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+            <include
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="16dp"
+                    layout="@layout/user_layout"
+                    android:id="@+id/game_first_user"
+                    />
+
+            <include
+                    android:visibility="invisible"
+                    android:id="@+id/game_first_user_active_point"
+                    layout="@layout/current_user_active_lay"
+                    />
+
+            <TextView
+                    android:id="@+id/game_score_tv"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42sp"
+                    android:textColor="#0077ff"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0:0"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    />
+
+            <include
+                    android:visibility="invisible"
+                    android:id="@+id/game_second_user_active_point"
+                    layout="@layout/current_user_active_lay"
+                    />
+            
+            <include
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    layout="@layout/user_layout"
+                    android:id="@+id/game_second_user"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.xgame.crosszero.custom.GameView
+            android:id="@+id/game_view"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+</LinearLayout>

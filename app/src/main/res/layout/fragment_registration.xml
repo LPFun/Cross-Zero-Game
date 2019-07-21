@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            >
+        <TextView
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="42sp"
+                android:textColor="#0077ff"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center_horizontal"
+                android:text="Registration"
+                android:fontFamily="@font/segoe_ui"
+
+                />
+        <EditText
+                android:id="@+id/registration_name_edittxt"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/registration_edittext_background"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:hint="Name"
+                android:textColorHint="@color/colorRegistrationHint"
+                />
+        <EditText
+                android:id="@+id/registration_phone_edittxt"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/registration_edittext_background"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:hint="Phone"
+                android:textColorHint="@color/colorRegistrationHint"
+                />
+        <EditText
+                android:id="@+id/registration_email_edittxt"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/registration_edittext_background"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:hint="E-mail"
+                android:textColorHint="@color/colorRegistrationHint"
+                />
+
+        <CheckBox
+                android:id="@+id/registration_checkbox"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"
+                android:text="I'm not robot"
+                />
+        <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/registration_continue_btn"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/button_continue"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                />
+    </LinearLayout>
+</ScrollView>
+
